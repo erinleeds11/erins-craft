@@ -1,0 +1,51 @@
+GLOBAL CONSTANTS 
+
+IPA_COST = 
+LAGER_COST =
+STOUT_COST = 
+PILSNER_COST = 
+
+Main function
+____________
+    * Greet user with welcome message - "Welcome to Erin's Craft Quiz and Store"
+    * While True:
+        *Ask user if they would like to take the quiz or jump to menu
+            *if quiz, call the quiz function
+                *print out what beer they were matched with
+                *ask if they would like to take the quiz again or jump to menu to make an order or quit (break)
+                    * beer quiz result list if they take the quiz more - output all of the results
+            *if menu, call the menu function
+            * client_list = [] - this will be useful to print out the final inventory with client's contact info
+                    * print out total cost 
+
+            * ask if there are more clients 
+                * else, break
+    * print each clients name and total cost by looping through different loops and printing out one by one 
+
+
+Quiz Portion
+------------
+*Quiz function
+    *Ask user a series of questions 
+    * Answers to questions will help determine what beer matches their taste 
+    * Store answers and using conditionals return the type of beer that matches their taste
+    * Beer options to return: DIPA, Lager, Stout, Pilsner
+ 
+Menu and Age Check
+------------
+*Menu function
+    * Display menu of beers with prices
+*Age Check function
+    * Ask user if they are over 21 years old
+    * return True if yes, break if no 
+
+Client Info Portion
+-------------------
+* Client function
+    * total cost empty list
+    *Ask for client's name 
+    * append it to client list
+    * Ask for how many of each beer they would want and store it 
+    *calculate total cost and return total cost
+        * append total cost
+    
